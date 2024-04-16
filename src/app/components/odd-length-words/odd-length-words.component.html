@@ -1,0 +1,10 @@
+@if (partialOddWord) {
+    <span class="text-danger">{{partialOddWord}}</span> <br />
+}
+@if (oddLengthWord.length === 0) {
+    <p>No odd lenght words</p>
+} @else {
+  @for (row of oddLengthWord; track row) {
+    <span>{{row}}</span><br />
+  }  
+}

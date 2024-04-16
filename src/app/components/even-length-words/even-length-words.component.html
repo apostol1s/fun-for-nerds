@@ -1,0 +1,10 @@
+@if (partialEvenWord !== '') {
+    <span class="text-danger">{{partialEvenWord}}</span> <br />
+}
+@if (evenLengthWord.length === 0) {
+    <p>No even lenght words</p>
+} @else {
+  @for (row of evenLengthWord; track row) {
+    <span>{{row}}</span><br />
+  }  
+}
